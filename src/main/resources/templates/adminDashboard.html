@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F8F9FA;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #28A745;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #eee 1px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .welcome-msg {
+            font-size: 18px;
+            color: #333;
+            margin-top: 20px;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div id="branding">
+            <h1>Admin Dashboard</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a th:href="@{/admin/home}">Home</a></li>
+                <li><a th:href="@{/admin/users}">Manage Users</a></li>
+                <li><a th:href="@{/admin/reports}">Reports</a></li>
+                <li><a th:href="@{/logout}">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <div class="card">
+        <h2>System Notifications</h2>
+
+    </div>
+<!--</div>-->
+</body>
+</html>
+
+
+
+
+
+
+

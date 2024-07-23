@@ -1,0 +1,193 @@
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Hospital Management System</title>-->
+<!--    <link rel="stylesheet" href="../static/css/styles.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--&lt;!&ndash;header>-->
+<!--    <img src="../static/images/medical-logo.jpg" alt="My Logo" class="logo">-->
+<!--    <h1>Health First Clinic</h1>-->
+<!--    <nav>-->
+<!--        <ul>-->
+<!--            <li><a href="#about">About Us</a></li>-->
+<!--            <li><a href="#services">Services</a></li>-->
+<!--            <li><a href="../templates/template-hms-location.html">Location</a></li>-->
+<!--            <li><a href="../templates/template-hms-homepage.html#contact">Reach out</a></li>-->
+<!--            <li><a href="../templates/template-hms-registration.html">Patient Registration</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+<!--</header&ndash;&gt;-->
+<!--<header>-->
+<!--    <nav class="navbar">-->
+<!--        <div class="navbar-left">-->
+<!--            <img src="../static/images/medical-logo.jpg" alt="My Logo" class="logo">-->
+<!--        </div>-->
+<!--        <div class="navbar-center">-->
+<!--            <h1>Health First Clinic</h1>-->
+<!--        </div>-->
+<!--        <div class="navbar-right">-->
+<!--            <nav>-->
+<!--                <ul class="nav-links">-->
+<!--                    <li><a href="#about">About Us</a></li>-->
+<!--                    <li><a href="#services">Services</a></li>-->
+<!--                    <li><a href="../templates/template-hms-location.html">Location</a></li>-->
+<!--                    <li><a href="../templates/template-hms-registration.html">Registration</a></li>-->
+<!--                </ul>-->
+<!--            </nav>-->
+<!--        </div>-->
+<!--    </nav>-->
+<!--</header>-->
+
+
+<!--<section id="about">-->
+<!--    <div>-->
+<!--        <h2>About Us</h2>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <p>We are commited towards community health, well-being and disease prevention through our expertise Doctors and Advanced Medical Treatments</p>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section id="services">-->
+<!--    <h2> Services</h2>-->
+<!--    <nav>-->
+<!--        <ul>-->
+<!--            <li>Primary care</li>-->
+<!--            <li>Cardiology</li>-->
+<!--            <li>Pediatric</li>-->
+<!--            <li>Orthopedic</li>-->
+<!--            <li>Gynecology</li>-->
+<!--            <li>ENT</li>-->
+<!--            <li>Surgery</li>-->
+<!--            <li>Emergency care</li>-->
+
+<!--        </ul>-->
+<!--    </nav>-->
+<!--</section>-->
+
+<!--<section id="contact">-->
+<!--    <h2>Reach Out</h2>-->
+<!--    <form id="contactForm"  method="post" role="form" th:action="@{/reachOut}" th:object="${reachout}>-->
+
+<!--    <label for="name"></label>-->
+<!--    <input type="text" id="name" name="name" th:field="*{name}" required>-->
+<!--        <label for="email">Email:</label>-->
+<!--        <input type="email" id="email" name="email"  th:field="*{email}" required>-->
+<!--        <label for="message">Message:</label>-->
+<!--        <textarea id="message" name="message"  th:field="*{message}" required></textarea>-->
+<!--        <button type="submit">Submit</button>-->
+<!--    </form>-->
+<!--</section>-->
+
+<!--&lt;!&ndash;footer>-->
+<!--    <p>&copy; 2024 Health First Clinic. All rights reserved.</p>-->
+<!--</footer&ndash;&gt;-->
+
+<!--<script>-->
+<!--    function navigateToDetails(id) {-->
+<!--        localStorage.setItem('detailId', id);-->
+<!--        window.location.href = 'details.html';-->
+<!--    }-->
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<!--header>
+    <img src="../static/images/medical-logo.jpg" alt="My Logo" class="logo">
+    <h1>Health First Clinic</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="../templates/template-hms-location.html">Location</a></li>
+            <li><a href="../templates/template-hms-homepage.html#contact">Reach out</a></li>
+            <li><a href="../templates/template-hms-registration.html">Patient Registration</a></li>
+        </ul>
+    </nav>
+</header-->
+<header>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="../static/images/medical-logo.jpg" alt="My Logo" class="logo">
+        </div>
+        <div class="navbar-center">
+            <h1>Health First Clinic</h1>
+        </div>
+        <div class="navbar-right">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="../templates/template-hms-location.html">Location</a></li>
+                    <li><a href="../templates/template-hms-registration.html">Registration</a></li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
+</header>
+
+<section id="about">
+    <div>
+        <h2>About Us</h2>
+    </div>
+    <div>
+        <p>We are committed towards community health, well-being and disease prevention through our expertise Doctors and Advanced Medical Treatments</p>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Services</h2>
+    <nav>
+        <ul>
+            <li>Primary care</li>
+            <li>Cardiology</li>
+            <li>Pediatric</li>
+            <li>Orthopedic</li>
+            <li>Gynecology</li>
+            <li>ENT</li>
+            <li>Surgery</li>
+            <li>Emergency care</li>
+        </ul>
+    </nav>
+</section>
+
+<section id="contact">
+    <h2>Reach Out</h2>
+    <form id="contactForm" method="post" role="form" th:action="@{/reachOut}" th:object="${reachOut}">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" th:field="*{name}" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" th:field="*{email}" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" th:field="*{message}" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!--footer>
+    <p>&copy; 2024 Health First Clinic. All rights reserved.</p>
+</footer-->
+
+<script>
+    function navigateToDetails(id) {
+        localStorage.setItem('detailId', id);
+        window.location.href = 'details.html';
+    }
+</script>
+
+</body>
+</html>
